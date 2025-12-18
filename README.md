@@ -1,4 +1,4 @@
-eCommerce Microservices Platform
+ECommerce Microservices Platform
 
 A production-style, cloud-native eCommerce backend built using Spring Boot Microservices and Spring Cloud.
 This project demonstrates service discovery, centralized configuration, API gateway security, distributed tracing, event-driven communication, inter-service calls, and containerized deployment using Docker.
