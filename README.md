@@ -16,27 +16,7 @@ Key Engineering Concepts Demonstrated :
 --> Database per service pattern
 --> Dockerized local development
 
-Client
-   |
-   v
-Keycloak (Auth Server - 8181)
-   |
-   v
-API Gateway (Spring Cloud Gateway)
-   |
-   v
-------------------------------------------------
-| User Service | Product Service | Order Service |
-------------------------------------------------
-   |              |                |
-   |              |                |
-   v              v                v
- MySQL          MySQL             MySQL
-
-Service Discovery → Eureka Server
-Configuration     → Config Server (GitHub)
-Tracing           → Zipkin (9411)
-Messaging         → Kafka + Zookeeper
+Client --> Keycloak (Auth Server - 8181) --> API Gateway (Spring Cloud Gateway) --> (User Service | Product Service | Order Service )--> Service Discovery → Eureka Server--> Configuration     → Config Server (GitHub)--> Tracing    -->        → Zipkin (9411)--> Messaging    -->      → Kafka + Zookeeper
 
 --> Core Components
 
